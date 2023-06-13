@@ -17,11 +17,11 @@ I want to make this game as low level and as contained as possible, preferably h
 Being a learning experience, here are the primary things I seek to learn better
 with this project
 
-[ ] Larger x86 assembly projects 
-[ ] Packing resources into an executable to be called directly from ROM
-[ ] A way to communicate with a graphics card (probably GDI+ or Direct2D, need more research)
-[ ] Sound.
-[ ] Planning a game engine from scratch and working to be minimal but efficient with qword memory
-[ ] Creating a procedural worldgen algorithm
-[ ] Implementing pathfinding 
-[ ] Using the registry for save-data and an auto save system 
+- [ ] Larger x86 assembly projects 
+- [ ] Packing resources into an executable to be called directly from ROM
+- [ ] A way to communicate with a graphics card (probably GDI+ or Direct2D, need more research)
+- [ ] Sound.
+- [ ] Planning a game engine from scratch and working to be minimal but efficient with qword memory
+- [ ] Creating a procedural worldgen algorithm
+- [ ] Implementing pathfinding 
+- [ ] Using the registry for save-data and an auto save system 
