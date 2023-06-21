@@ -21,7 +21,7 @@ Each biome will have two types of tiles: land and wall. Different wall tiles wil
 | Forest | None | Tree | None | Yes | Nature |
 | Mountain | None | Mountain | Climbing | No | Earth |
 | Swamp | None | Swamp | Passable | No | No |
-| Lava flats | Fireproof | Lava lakes | No | Fire |
+| Lava flats | Fireproof | Lava lakes | None | No | Fire |
 | Tundra | Cold Resistance | Ice Mountains | Climbing | No | Water |
 | Ocean | None | Ocean | Water-walking | Yes | No |
 | Cursed | Blessing | Ruins | None | No | Darkness |
