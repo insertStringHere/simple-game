@@ -9,13 +9,47 @@ The game will be a simple roguelite with the goal of delving into 8 dungeons and
 Gameplay will be real-time, working with arrow keys, heavily inspired by zelda 1. Different weapons will have different swing speeds, ranges, and damage. The world will be split into multiple biomes, each spawning a set of enemies wanting to kill the player. 
 
 ## The world
-The world will, as of now, consist of up to 15 biomes that can be generated deterministically from a seed as a function of the x,y coords of the space. The 16th biome will generate a dungeon where one of the gems can be taken
+The world will, as of now, consist of up to 16 biomes that can be generated deterministically from a seed as a function of the x,y coords of the space. Each biome can generate a dungeon where one of the gems can be taken. Different biomes can have different hazards which will require the player to gain certain abilities first.
+
+Possibly villages could be added in the future, with quests from villagers for better tools or guidance; not currently in scope.
+
+Each biome will have two types of tiles: land and wall. Different wall tiles will have different abilities that could pass through them.
+
+### Biomes
+| Name | Hazard | Wall | Wall Pass Ability | Village? | Gem? |
+|------|--------|------|-------------------|----------|------|
+| Forest | None | Tree | None | Yes | Nature |
+| Mountain | None | Mountain | Climbing | No | Earth |
+| Swamp | None | Swamp | Passable | No | No |
+| Lava flats | Fireproof | Lava lakes | No | Fire |
+| Tundra | Cold Resistance | Ice Mountains | Climbing | No | Water |
+| Ocean | None | Ocean | Water-walking | Yes | No |
+| Cursed | Blessing | Ruins | None | No | Darkness |
+| Meadow | None | None | None | Yes | No |
+| Blessed Plains | Shadow Veil | None | None | No | Light |
+| Graveyard | None | Graves | None | No | No |
+| Desert | None | Sand Dunes | Passable | Yes | No |
+| Sand-swept ruins | None | Ruins | None | No | Spirit |
+| Wicked Spires | Magic Traction | Mountain Spires | None | No | Wind |  
+ 
 
 ## The player
 
 ### Stats
 
 ### Abilities
+
+| Name | Ability |
+|------|---------|
+| Climbing | Allows player to climb (walk on) mountain tiles |
+| Fireproof | Allows player to walk in lava flats biome |
+| Cold Resistence | Allows player to walk in Tundra biomes |
+| Water-walking | Allows the player to walk on ocean water tiles |
+| Blessing | Allows walking in cursed biomes |
+| Shadow Veil | Allows walking in blessed biomes |
+| Magic traction | Allows walking in windy biomes |
+| Charge | Allows player to charge an attack - double the swing time for triple the damage |
+| Dash | Allows a dash in any direction with a cooldown based on weapon swing time |
 
 ### Weapons
 The player will be able to equip one weapon item, each having a unique range and a random value for damage and speed calculated from 0-15 centered on a base stat.
@@ -35,6 +69,6 @@ Weapons can additionally have a boost to one of the player's other stats.
 
 ## Enemies
 
-### Pathfinding algorithm
+### AI algorithm
 
 ### List
