@@ -38,10 +38,17 @@ Dungeons are randomly generated using tile-based room-gen, stretching outwards f
 ## The player
 
 ### Stats
-Player stats are impacted by the gear they have.
+Player stats are impacted by the gear they have. Values will go from 0 to 255.
 
 | Name | Impact | Default |
 |------|--------|---------|
+| Health | How much health the entity has, at 0 they will die. | 20 |
+| Hunger | Food will contribute to natural regeneration of health, decaying slowly over time and quickly while replenishing health. Hitting zero will start causing the player damage when they try to heal | 20 |
+| Strength | Raw attack bonus, adds a percent bonus to attack value | 0 |
+| Dexterity | Chance to dodge an attack, modifies how quickly hunger depletes | 0 |
+| Charisma | Affects shop prices and likelyhood of enemies aggroing | 0 |
+| Luck | increase chance for beneficial drops | 0 | 
+
 ### Abilities
 Abilities will be found somewhere in a dungeon, each dungeon having one random one for the players to unlock.  
 
@@ -57,7 +64,7 @@ Abilities will be found somewhere in a dungeon, each dungeon having one random o
 | Charge | Allows player to charge an attack - double the swing time for triple the damage |
 | Dash | Allows a dash in any direction with a cooldown based on weapon swing time |
 | Stealth movement | After not moving for a certain amount of time, player will become invisible to enemies |
-
+| Parry/Block | A button input to counter a percent of enemy damage if timed right, or prevent damage to the player at the cost of food |
 
 ### Weapons
 The player will be able to equip one weapon item, each having a unique range and a random value for damage and speed calculated from 0-15 centered on a base stat.
