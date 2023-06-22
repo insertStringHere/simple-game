@@ -38,7 +38,10 @@ Dungeons are randomly generated using tile-based room-gen, stretching outwards f
 ## The player
 
 ### Stats
+Player stats are impacted by the gear they have.
 
+| Name | Impact | Default |
+|------|--------|---------|
 ### Abilities
 Abilities will be found somewhere in a dungeon, each dungeon having one random one for the players to unlock.  
 
@@ -71,7 +74,22 @@ Weapons can additionally have a boost to one of the player's other stats.
 ### Armor
 Player armor will provide a defense bonus (damage reduction) from 1-16, with 16 being 75% damage reduction, alongside a bonus stat to one of the player's abilities.
 
+### Charms
+Players will have a slot for a charm which will add up to three bonus stats to the player.
+
 ### Items
+Items will be one use items with a variety of potential effects. Only one stat boost can be active at a time. Items will occasionally be dropped by enemies.
+
+| Name | Effect |
+|------|--------|
+| Lesser healing potion | |
+| Greater healing potion | |
+| Ration | |
+| Meal | |
+| Teleportation scroll | Teleports the player to a random location |
+| Dungeon Teleportation scroll | Teleports the player to a random dungeon |
+| Village Teleportation scroll | Teleports the player to a random village |
+
 
 ## Enemies
 
