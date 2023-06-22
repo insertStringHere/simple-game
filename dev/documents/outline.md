@@ -32,12 +32,15 @@ Each biome will have two types of tiles: land and wall. Different wall tiles wil
 | Sand-swept ruins | None | Ruins | None | No | Spirit |
 | Wicked Spires | Magic Traction | Mountain Spires | None | No | Wind |  
  
+### Dungeons
+Dungeons are randomly generated using tile-based room-gen, stretching outwards from a starting point. They'll always have an ability room, alongside a gem room if one spawns for the biome. When the player already has the ability/gem, nothing will spawn.
 
 ## The player
 
 ### Stats
 
 ### Abilities
+Abilities will be found somewhere in a dungeon, each dungeon having one random one for the players to unlock.  
 
 | Name | Ability |
 |------|---------|
@@ -50,6 +53,8 @@ Each biome will have two types of tiles: land and wall. Different wall tiles wil
 | Magic traction | Allows walking in windy biomes |
 | Charge | Allows player to charge an attack - double the swing time for triple the damage |
 | Dash | Allows a dash in any direction with a cooldown based on weapon swing time |
+| Stealth movement | After not moving for a certain amount of time, player will become invisible to enemies |
+
 
 ### Weapons
 The player will be able to equip one weapon item, each having a unique range and a random value for damage and speed calculated from 0-15 centered on a base stat.
@@ -60,10 +65,11 @@ Weapons can additionally have a boost to one of the player's other stats.
 | Sword | Directly in front  | 7 | 9 |
 | Axe | Three tiles wide | 13 | 4 |
 | Dagger | One tile in front | 3 | 14 |
-| Hammer | five tiles wide in a U shape | 14 | 1 |  
-| lance | two tiles out | 6 | 8 |
+| Hammer | Five tiles wide in a U shape | 14 | 1 |  
+| Lance | Two tiles out | 6 | 8 |
 
 ### Armor
+Player armor will provide a defense bonus (damage reduction) from 1-16, with 16 being 75% damage reduction, alongside a bonus stat to one of the player's abilities.
 
 ### Items
 
