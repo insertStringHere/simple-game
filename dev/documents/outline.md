@@ -89,17 +89,45 @@ Items will be one use items with a variety of potential effects. Only one stat b
 
 | Name | Effect |
 |------|--------|
-| Lesser healing potion | |
-| Greater healing potion | |
-| Ration | |
-| Meal | |
-| Teleportation scroll | Teleports the player to a random location |
-| Dungeon Teleportation scroll | Teleports the player to a random dungeon |
-| Village Teleportation scroll | Teleports the player to a random village |
-
+| Lesser Healing Potion | Restores 5 health on use |
+| Greater Healing Potion | Restores 15 health on use |
+| Ration | Restores 10 hunger on use | 
+| Meal | Restores 20 hunger on use |
+| Teleportation Scroll | Teleports the player to a random location |
+| Dungeon Teleportation Scroll | Teleports the player to a random dungeon |
+| Village Teleportation Scroll | Teleports the player to a random village |
+| Strength Enhancement Potion | Increases player strength by 3 for one minute of game-time |
+| Dexterity Enhancement Potion | Increases player dexterity by 3 for one minute of game-time |
+| Charisma Enhancement Potion | Increases player charisma by 3 for one minute of game-time |
+| Luck Enhancement Potion | Increases player luck by 3 for one minute of game-time |
 
 ## Enemies
+Enemies will spawn randomly throughout the world, depending on the biome. Some will spawn in multiple biomes, some only in one, and some only in dungeons. All enemies will have an underlying set of ability stats, the same as the player. Different enemies will use different AI algorithms.
 
 ### AI algorithm
 
+- Wanderer
+	- Wanders randomly when not aggro on player
+	- Does not aggro on player
+- Seeker
+	- Wanders randomly until player is within aggro range
+	- Pathfinds to player when within range
+	- Deals contact damage, waiting for a few seconds before resuming pursuit
+- Spitter
+	- Wanders randomly when not aggro on player
+	- Pathfinds away from player to a distance smaller than aggro range
+	- Fires a projectile, waiting for it to despawn to retreat again 
+- Weapon
+	- Patrols until player is within aggro range
+	- Pathfinds to player when within range
+	- Uses a randomly generated weapon, same as a player would use with the same rules.
+- Advanced
+	- Stands still until player is within aggro range
+	- Pathfinds to player when within range
+	- Uses a randomly generated weapon, same as a player would use with the same rules
+	- Capable of retreating and using a randomly generated set of player active skills
+
 ### List
+
+| Name | AI | Health | Strength | Dexterity | Biomes |
+|------|----|--------|----------|-----------|--------|
