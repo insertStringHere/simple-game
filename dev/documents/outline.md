@@ -15,6 +15,8 @@ Possibly villages could be added in the future, with quests from villagers for b
 
 Each biome will have two types of tiles: land and wall. Different wall tiles will have different abilities that could pass through them.
 
+See the [graphics outline](./art_assets#tiles) for the tile graphics.
+
 ### Biomes
 | Name | Hazard | Wall | Wall Pass Ability | Village? | Gem? |
 |------|--------|------|-------------------|----------|------|
@@ -70,13 +72,17 @@ Abilities will be found somewhere in a dungeon, each dungeon having one random o
 The player will be able to equip one weapon item, each having a unique range and a random value for damage and speed calculated from 0-15 centered on a base stat.
 Weapons can additionally have a boost to one of the player's other stats.
 
+See the [graphics outline](./art_assets#weapon_sprites_and_animations) for the weapon icons and animations.
+
 | Weapon Name | Attack range | Base damage | Base speed |
 |-------------|--------------|-------------|------------|
-| Sword | Directly in front  | 7 | 9 |
+| Sword | One tile in front  | 7 | 9 |
 | Axe | Three tiles wide | 13 | 4 |
 | Dagger | One tile in front | 3 | 14 |
 | Hammer | Five tiles wide in a U shape | 14 | 1 |  
 | Lance | Two tiles out | 6 | 8 |
+| Rapier | One tile in front | 4; ignores defense | 9 | 
+| Bow | Up to 10 tiles in front or until hitting a wall | 6 | cannot be fired again until the last arrow despawns |
 
 ### Armor
 Player armor will provide a defense bonus (damage reduction) from 1-16, with 16 being 75% damage reduction, alongside a bonus stat to one of the player's abilities.
@@ -86,6 +92,8 @@ Players will have a slot for a charm which will add up to three bonus stats to t
 
 ### Items
 Items will be one use items with a variety of potential effects. Only one stat boost can be active at a time. Items will occasionally be dropped by enemies.
+
+See the [graphics outline](./art_assets#item_sprites) for the item sprites.
 
 | Name | Effect |
 |------|--------|
@@ -103,6 +111,8 @@ Items will be one use items with a variety of potential effects. Only one stat b
 
 ## Enemies
 Enemies will spawn randomly throughout the world, depending on the biome. Some will spawn in multiple biomes, some only in one, and some only in dungeons. All enemies will have an underlying set of ability stats, the same as the player. Different enemies will use different AI algorithms.
+
+See the [graphics outline](./art_assets#entity_sprites) for the enemy sprites.
 
 ### AI algorithm
 
