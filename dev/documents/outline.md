@@ -141,3 +141,4 @@ See the [graphics outline](./art_assets.md#entity-sprites) for the enemy sprites
 
 | Name | AI | Health | Strength | Dexterity | Biomes |
 |------|----|--------|----------|-----------|--------|
+| Lava Slime | Seeker | 8 | 3 | 0 | Lava Flats |
