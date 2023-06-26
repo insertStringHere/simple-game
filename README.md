@@ -1,5 +1,5 @@
 # simple-game
-A simple roguelite game for windows written primarily in assembly.
+A simple roguelite game for windows written primarily in C.
 
 # The Goals
 Less than making a functional game, theres a few things I want to learn while doing this project.  
@@ -12,12 +12,12 @@ For the actual game, here are the desired components:
 - perma-death
 
 # The Technical Stuff
-I want to make this game as low level and as contained as possible, preferably having only one executable file and nothing additional even after the game is run. As a result, this game will only be runnable on 64 bit windows.    
+I want to make this game as low level and as contained as possible, preferably having only one executable file and nothing additional even after the game is run. ~~As a result, this game will only be runnable on 64 bit windows.~~ I will do my best to make the system calls modular, so in the future I can work on a unix implementation.
 # The Learning Objectives 
-Being a learning experience, here are the primary things I seek to learn better
-with this project
+Being a learning experience, here are the primary things I seek to learn better with this project
 
-- [ ] Larger x86 assembly projects 
+- ~~[ ] Larger x86 assembly projects~~ 
+- [ ] Larger C projects written from scratch
 - [ ] Packing resources into an executable to be called directly from ROM
 - [ ] A way to communicate with a graphics card (probably GDI+ or Direct2D, need more research)
 - [ ] Sound.
