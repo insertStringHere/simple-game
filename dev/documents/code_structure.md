@@ -10,6 +10,15 @@
 32 bytes per * 256 tiles high * 256 tiles wide = 2,097,152 bytes  
 **2MiB of tile data**
 
+## Tile memory
+Tile memory will exist in a pair of linked lists. When memory is free, it will exist in a linked list queue. When allocated, it will
+exist in a 4-directional linked list, referencing all surrounding tiles within its positioning for easier pathfinding.
+- A pointer to the tile data memory chunk
+- A queue of free memory
+- An allocate function to grab and generate tile memory
+- A free function to delete contained tile memory, deallocate enemy, and return memory to the free queue
+- An initialization function to set all memory offsets and add memory to the free queue
+
 # Load-time operations
 
 # Runtime loop
