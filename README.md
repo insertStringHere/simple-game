@@ -16,7 +16,6 @@ I want to make this game as low level and as contained as possible, preferably h
 # The Learning Objectives 
 Being a learning experience, here are the primary things I seek to learn better with this project
 
-- ~~[ ] Larger x86 assembly projects~~ 
 - [ ] Larger C projects written from scratch
 - [ ] Packing resources into an executable to be called directly from ROM
 - [ ] A way to communicate with a graphics card (probably GDI+ or Direct2D, need more research)

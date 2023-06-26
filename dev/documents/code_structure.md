@@ -1,5 +1,14 @@
 # Data structures
 ## Tile data
+| Qword | Contents |
+|-------|----------|
+| 0 | <ul><li>Current memory offest - 4 bytes</li><li>Tile type - 2 bits</li><li>Biome - 6 bits</li><li><div>Flags - 1 byte</div><ul><li>Has dungeon - 1 bit</li><li>Has village - 1 bit</ul></li><li>Enemy mem offset - 2 bytes</li></ul> | 
+| 1 | <ul><li>X position - 4 bytes</li><li>Y position - 4 bytes</li></ul> |
+| 2 | <ul><li>Top tile - 2 bytes</li><li>Bottom tile - 2 bytes</li><li>Right tile - 2 bytes</li><li>Left tile - 2 bytes</li></ul> |
+| 3 | Tile graphic pointer - 8 bytes |
+
+32 bytes per * 256 tiles high * 256 tiles wide = 2,097,152 bytes  
+**2MiB of tile data**
 
 # Load-time operations
 
