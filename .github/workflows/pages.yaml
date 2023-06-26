@@ -30,7 +30,7 @@ jobs:
         run: sudo apt-get install doxygen -y
         shell: bash 
       - name: Create Output Files
-        run: mkdir ./docs/html ./docs/man
+        run: mkdir ./docs ./docs/html ./docs/man
         shell: bash
       - name: Compile Documentation
         run:  doxygen ./doxConfig.cfg
